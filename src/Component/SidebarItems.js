@@ -16,13 +16,13 @@ export const SidebarItems =[
    
     {
         title:'Contact',
-        path:'/contact',
+        path:'/contacts',
         icon:<BsIcons.BsPerson size={20}/>,
         cName:'nav-text'
     },
     {
         title:'Alarm',
-        path:'/alarm',
+        path:'/contacts',
         icon:<FaIcons.FaUserEdit size={20}/>,
         cName:'nav-text'
     },

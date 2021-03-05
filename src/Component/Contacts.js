@@ -1,67 +1,52 @@
 import React from 'react'
 import {Container,Row,Col,Form,FormControl} from 'react-bootstrap'
-import './Contact.css';
+import {Link}  from 'react-router-dom'
 
-
-const Contacts = () => {
+const Contacts = () =>  {
     return (
-       
-         <Container  className='contact-sec'> 
-            <Row>
-              <Col sm={4}>
-              <div className="ui list">
+        <div className="container ">
+
+           <div class="row">
+
+               <div class="col-sm-8 w-50 m-5">
+               <div className="ui list">
                  <div className="item">
                  <i class="big orange address book outline icon"></i>
                  <div className="content">
                       <div className="header"> <h5>Conatcts </h5></div>
-                      <div class="description">This is an Contact List</div>
-                      <div className="item"> 
-                     
-                      </div>
+                      <div class="description">This is an Contact List</div>  
                  </div>
                  </div>
-              </div>
-              </Col>
-              <Col sm={4} >
-              <div className="content"><p>Sort by: <b>Date Created</b><i className="angle down icon"></i></p></div> 
-              </Col>
-            </Row>
+                  </div>
+               </div>
+               </div>
 
-            <Row className='sec-contact'>
-              <Col sm={8} >
-              
-            <form>
-            <div class="ui form">
-                <div className="inline fields">
-                   <div class="eight wide field">
-                   <div class="ui icon input">
+               <div className="row">
+                 <div className="col-sm w-25 ml-5">
+                   <form>
+                       <div className="ui form">
+                       <div className="inline fields">
+                       <div className="eight wide field">
+                       <div className="ui icon input">
                    <input type="text" placeholder="Search Conatcts"/>
                    <i class="search icon"></i>
-                   
                    </div>
-                   
-                   <button  className="ui orange button">
+                   <Link  to="/users/add" className="ui orange button sha" >
                    AddContact
-                   </button>
-                
+                   </Link>
+                           </div>
+                           </div>
+                       </div>
+                   </form>
                    </div>
-                </div>
-            </div>
-            </form>
-            
+                 </div>
 
-            </Col>   
-            </Row>
 
-         </Container>
-         
+
+         </div>
+           
        
-
-
-
-        
-      
     )
 }
 
-export default Contacts
+export default Contacts;

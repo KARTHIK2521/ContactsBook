@@ -13,6 +13,8 @@ const  Navbar = () => {
     const showSidebar = () => setsidebar(!sidebar);
     return (
         <>
+        <div className="row">
+       <div className="col-md-12">
         <IconContext.Provider value={{color:'#fff'}}>
         <div className="navbar">
             <Link to="#" className="menu-bars">
@@ -42,8 +44,9 @@ const  Navbar = () => {
             </ul>
          </nav>
          </IconContext.Provider>
-
-        </>
+           </div>
+           </div>
+          </>
     )
 };
 
